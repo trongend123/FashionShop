@@ -1,0 +1,96 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.title {
+    font-weight: 700;
+    font-size: 25;
+
+}
+
+.information {
+    text-align: center;
+    width: calc((100%/12)*6);
+}
+
+.information-option {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+
+
+.table {
+    font-size: 18;
+    color: rgb(144, 130, 110);
+}
+
+.table input,
+select {
+    width: 225%;
+    height: 35;
+    font-size: 15px;
+    outline: none;
+}
+
+
+.information-email {
+    margin: 20 20;
+}
+
+.button-submit {
+    margin-top: 20px;
+}
+
+.button-submit button {
+    height: 35px;
+    width: 30%;
+    background-color: rgb(214, 210, 205);
+    border: none;
+    border-radius: 20px;
+    font-size: 16;
+}
+
+
+/* PRODUCT */
+
+
+.product {
+    width: calc((100%/12)*6);
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.product-content-img img {
+    max-width: 500px;
+    max-height: 150px;
+}
+
+
+.product-content-details {
+    font-size: 19;
+    font-weight: 550;
+}
+
+
+.product-content-price {
+    display: flex;
+    align-items: center;
+    font-size: 18;
+    font-weight: 550;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-around;
+}
