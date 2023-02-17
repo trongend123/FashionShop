@@ -29,7 +29,9 @@
 
     </div>
 
-
+    <div>
+        <a href="ChangePassword.jsp"> <p> Change Password </p></a>
+    </div>
 
     <c:if test="${sessionScope.account.getUserName() != null}">
 

@@ -1,27 +1,17 @@
 <%-- 
-    Document   : Login
-    Created on : Jan 12, 2023, 11:55:15 AM
-    Author     : ASUS
+    Document   : ChangePassword
+    Created on : Feb 16, 2023, 11:08:59 PM
+    Author     : laptop 368
 --%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--        Front awesome-->
-        <link rel="stylesheet" href="F-A/fontawesome-free-6.2.1-web/css/all.css"> 
-
-        <link rel="stylesheet" href="CSS/login.css">
-        <link rel="stylesheet" href="CSS/HomePage.css">
-        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
-
     <body>
-
         <%@include file="Header.jsp" %>
         <div class="main">
 
@@ -37,10 +27,10 @@
 
 
 
-                <form id="form" action="login" method="POST">
+                <form id="form" action="ChangePasswordServlet" method="POST">
 
                     <div class="main-log-title">
-                        <p>LOG IN</p>
+                        <p>Change Password</p>
                     </div>
 
                     <div class="main-log-info">
@@ -52,19 +42,24 @@
 
 
                     <div class="main-log-info">
-                        <label for="passwordId">Pass Word</label>
-                        <p><input type="password" id="passwordId" name="passwordName" placeholder="Enter Pass Word"></p>
+                        <label for="passwordId"> Old Pass Word</label>
+                        <p><input type="password" id="passwordId" name="oldPass" placeholder="Enter Pass Word"></p>
+                    </div>
+                    
+                    <div class="main-log-info">
+                        <label for="passwordId"> New Pass Word</label>
+                        <p><input type="password" id="passwordId" name="newPass" placeholder="Enter Pass Word"></p>
+                    </div>
+                    
+                    <div class="main-log-info">
+                        <label for="passwordId"> Confirm Pass Word</label>
+                        <p><input type="password" id="passwordId" name="confirmPass" placeholder="Enter Pass Word"></p>
                     </div>
 
 
-                    <div class="remember">
-                        <p>Remember me <!--<input type="checkbox">--> </p>
-                    </div>
-                    <div>
-                        <a href="ForgotPassword.jsp"> <p> Forgot Password </p></a>
-                    </div>
+                    
                     <div class="submit">
-                        <button type="submit">Login</button>
+                        <button type="submit">Change</button>
                     </div>
 
 
@@ -80,8 +75,5 @@
         </div>
 
         <%@include file="Footer.jsp"%>
-
-
     </body>
-
 </html>

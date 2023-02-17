@@ -55,6 +55,14 @@
         <servlet-name>SubmitOrderrServlet</servlet-name>
         <servlet-class>Controller.SubmitOrderrServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ForgotPasswordServlet</servlet-name>
+        <servlet-class>Controller.ForgotPasswordServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <servlet-class>Controller.ChangePasswordServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SetUpHomePage</servlet-name>
         <url-pattern>/setUpHomePage</url-pattern>
@@ -130,6 +138,14 @@
     <servlet-mapping>
         <servlet-name>SubmitOrderrServlet</servlet-name>
         <url-pattern>/submitOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgotPasswordServlet</servlet-name>
+        <url-pattern>/ForgotPasswordServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <url-pattern>/ChangePasswordServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

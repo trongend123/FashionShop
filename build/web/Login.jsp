@@ -60,8 +60,9 @@
                     <div class="remember">
                         <p>Remember me <!--<input type="checkbox">--> </p>
                     </div>
-
-
+                    <div>
+                        <a href="ForgotPassword.jsp"> <p> Forgot Password </p></a>
+                    </div>
                     <div class="submit">
                         <button type="submit">Login</button>
                     </div>

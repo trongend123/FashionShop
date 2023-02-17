@@ -1,8 +1,9 @@
 <%-- 
-    Document   : Login
-    Created on : Jan 12, 2023, 11:55:15 AM
-    Author     : ASUS
+    Document   : ForgotPassword
+    Created on : Feb 16, 2023, 11:02:22 PM
+    Author     : laptop 368
 --%>
+
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
@@ -37,10 +38,10 @@
 
 
 
-                <form id="form" action="login" method="POST">
+                <form id="form" action="ForgotPasswordServlet" method="POST">
 
                     <div class="main-log-title">
-                        <p>LOG IN</p>
+                        <p>Forgot Password By Email</p>
                     </div>
 
                     <div class="main-log-info">
@@ -50,21 +51,8 @@
                         </p>
                     </div>
 
-
-                    <div class="main-log-info">
-                        <label for="passwordId">Pass Word</label>
-                        <p><input type="password" id="passwordId" name="passwordName" placeholder="Enter Pass Word"></p>
-                    </div>
-
-
-                    <div class="remember">
-                        <p>Remember me <!--<input type="checkbox">--> </p>
-                    </div>
-                    <div>
-                        <a href="ForgotPassword.jsp"> <p> Forgot Password </p></a>
-                    </div>
                     <div class="submit">
-                        <button type="submit">Login</button>
+                        <button type="submit">Reset Password</button>
                     </div>
 
 

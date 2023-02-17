@@ -17,6 +17,10 @@ public interface SqlQuery {
         public static final String signUp = "INSERT INTO [ACCOUNT] VALUES(?,?,?,?,?)";
 
         public static final String getAddressByUserId = "SELECT P.Address FROM [ACCOUNT] A WHERE A.UserId = ?";
+        
+        public static final String changePass = "Update [ACCOUNT] set [PassWord]= ? where UserName =?";
+        
+        public static final String getEmail = "select Email from [ACCOUNT] where UserName=?";
     }
 
     interface category {
