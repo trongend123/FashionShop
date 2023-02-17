@@ -56,14 +56,43 @@ public class AccountDao extends MyDao implements SqlQuery {
         }
         return 0;
     }
+    public int changePassword(String userName, String newpass){
+      try {
+            ps = con.prepareStatement(SqlQuery.account.changePass);
+            ps.setString(1, newpass);
+            ps.setString(2, userName);
+            
+            if (ps.executeUpdate() > 0) {
+                return 1;
+            }
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+    
+    public String getEmail(String userName){
+      try {
+            ps = con.prepareStatement(SqlQuery.account.getEmail);  
+            ps.setString(1, userName);
+            rs = ps.executeQuery();
+             if (rs.next()) {
+            return rs.getString(1);
+             }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
     public static void main(String[] args) {
         AccountDao a = new AccountDao();
-        Account x = a.loginByUserName("ADMIN", "NguyenThienThang2002");
-        System.out.println(x);
+        System.out.println(a.getEmail("TRONG"));
+    }
 
 //        Account account = new Account("account", "1234h", 326576545, 5, "email@gmail.com");
 //       // System.out.println(a.signUp(account));
-    }
+        }
 
-}
+
