@@ -610,15 +610,15 @@ public class ProductDao extends MyDao implements SqlQuery {
 
             String sql_into_Size = "Insert into SIZE ([AgentID], "
                     + "[ProductID], "
-                    + "[Quantity], "
-                    + "[Size]) values "
+                    + "[Size], "
+                    + "[Quantity]) values "
                     + "(?, ?, ?, ?)";
             PreparedStatement stm_insert_Size = connection.prepareStatement(sql_into_Size);
             stm_insert_Size.setInt(1, id);
             stm_insert_Size.setInt(2, idMax + 1);
 
-            stm_insert_Size.setInt(3, model.getSizeObject().getQuantity());
-            stm_insert_Size.setString(4, model.getSizeObject().getSize());
+            stm_insert_Size.setString(3, model.getSizeObject().getSize());
+            stm_insert_Size.setInt(4, model.getSizeObject().getQuantity());
             stm_insert_Size.executeUpdate();
         } catch (SQLException e) {
 

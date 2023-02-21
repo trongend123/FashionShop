@@ -79,8 +79,8 @@ public interface SqlQuery {
 
         public static final String insertSize = "Insert into SIZE ([AgentID], "
                 + "[ProductID], "
-                + "[Quantity], "
-                + "[Size]) values "
+                + "[Size], "
+                + "[Quantity]) values "
                 + "(?, ?, ?, ?)";
 
         public static final String upDateProduct = "Update [PRODUCTS] "
