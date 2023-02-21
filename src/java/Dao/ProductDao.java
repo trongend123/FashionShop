@@ -364,6 +364,16 @@ public class ProductDao extends MyDao implements SqlQuery {
         }
         return list;
     }
+    public void insertIntoSize(Product model){
+        try{
+            String sql="";
+            ps=con.prepareStatement(sql);
+            
+        }catch(SQLException e){
+            
+        }
+        
+    }
 
     // get List product by All filter
     public List<Product> getListProductByALlFilter(String season, String price, String gender, String size, int categoryId) {
