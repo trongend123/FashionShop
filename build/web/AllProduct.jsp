@@ -15,7 +15,8 @@
         <!--            CSS -->
         <link rel="stylesheet" href="CSS/HomePage.css">
         <link rel="stylesheet" href="CSS/AllProduct.css">
-
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
         <!--          JS -->
         <script src="JS/AllProduct.js" defer></script>
 
@@ -49,16 +50,16 @@
 
 
         <c:forEach items="${products}" var="products">
-                            <article class="style1">
-                                <a href="product?productId=${products.productId}" >
-                                    <span class="image">
-                                    <img src="${products.getImg()}" alt="" />
-                                </span>
-                                    <h2>${products.getProductnName()}</h2>
-                                        <p><strong>$${products.getPrice()}</strong></p>
-                                </a>
-                            </article>
-                        </c:forEach>
+            <article class="style1">
+                <a href="product?productId=${products.productId}" >
+                    <span class="image">
+                        <img src="${products.getImg()}" alt="" />
+                    </span>
+                    <h2>${products.getProductnName()}</h2>
+                    <p><strong>$${products.getPrice()}</strong></p>
+                </a>
+            </article>
+        </c:forEach>
         <hr>
 
         <div class="filTer">
@@ -132,7 +133,7 @@
 
         <div class="product" id="product-box">
 
-               <c:forEach items="${listProductByCategoryId}" var="c">
+            <c:forEach items="${listProductByCategoryId}" var="c">
                 <div class="product-item">
                     <div class="product-item-img">
                         <a href="product?productId=${c.getProductId()}"><img src="${c.getImg()}" alt=""> </a>               

@@ -1,6 +1,6 @@
-﻿CREATE DATABASE FashionShopxxxxxxx
+﻿drop
+DATABASE FashionShopxxxxxxx
 USE  FashionShopxxxxxxx
-
 CREATE TABLE [CATEGORIES](
 [CategoryID] INT IDENTITY (1,1) PRIMARY KEY,
 

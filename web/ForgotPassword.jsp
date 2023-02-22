@@ -15,7 +15,8 @@
 
         <!--        Front awesome-->
         <link rel="stylesheet" href="F-A/fontawesome-free-6.2.1-web/css/all.css"> 
-
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
         <link rel="stylesheet" href="CSS/login.css">
         <link rel="stylesheet" href="CSS/HomePage.css">
         <title>Login</title>
@@ -73,3 +74,7 @@
     </body>
 
 </html>
+<script src="Bootstrap/jquery/dist/jquery.min.js"></script>
+<script src="Bootstrap/popper.js/dist/popper.min.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>

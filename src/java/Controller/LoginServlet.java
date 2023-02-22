@@ -50,7 +50,8 @@ public class LoginServlet extends HttpServlet {
          // if not found
         if (accountDao.loginByUserName(userName, passWord) == null) {
             request.setAttribute("result", "Wrong password or username !");
-            request.getRequestDispatcher("Login.jsp").forward(request, response);
+            request.getRequestDispatcher("HomePage.jsp").forward(request, response);
         }
     }
+    
 }

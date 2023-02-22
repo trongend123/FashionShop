@@ -41,8 +41,8 @@ public class SignUpServlet extends HttpServlet {
 
         // insert to Database
         accountDao.signUp(account);
-        request.getRequestDispatcher("Login.jsp").forward(request, response);
-        response.sendRedirect("Login.jsp");
+        request.getRequestDispatcher("HomePage.jsp").forward(request, response);
+        response.sendRedirect("HomePage.jsp");
 
     }
      public void SendMail(String user, String email)  {
