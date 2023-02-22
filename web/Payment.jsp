@@ -13,6 +13,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/Payment.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
         <title>Payment</title>
     </head>
 
@@ -294,3 +296,7 @@
     </body>
 
 </html>
+<script src="Bootstrap/jquery/dist/jquery.min.js"></script>
+<script src="Bootstrap/popper.js/dist/popper.min.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>

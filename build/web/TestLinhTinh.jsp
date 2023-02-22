@@ -17,22 +17,6 @@
         <h1>${email}</h1> <br><!-- comment -->
         <h1>${payment}</h1> <br>
 
-        <c:forEach var="c" items="${listCart}">
-
-            <div class="product-content-name">
-                <p>${c.getCartID()}</p>
-            </div>
-
-            <div class="product-content-name">
-                <p>${c.getProductName()}</p>
-            </div>
-
-            <div class="product-content-quantity">
-                <p>quantity: ${c.getQuantity()}</p>
-            </div>
-
-        </c:forEach>
-
 
 
 

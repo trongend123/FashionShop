@@ -10,6 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
     </head>
     <body>
         <%@include file="Header.jsp" %>
@@ -45,19 +47,19 @@
                         <label for="passwordId"> Old Pass Word</label>
                         <p><input type="password" id="passwordId" name="oldPass" placeholder="Enter Pass Word"></p>
                     </div>
-                    
+
                     <div class="main-log-info">
                         <label for="passwordId"> New Pass Word</label>
                         <p><input type="password" id="passwordId" name="newPass" placeholder="Enter Pass Word"></p>
                     </div>
-                    
+
                     <div class="main-log-info">
                         <label for="passwordId"> Confirm Pass Word</label>
                         <p><input type="password" id="passwordId" name="confirmPass" placeholder="Enter Pass Word"></p>
                     </div>
 
 
-                    
+
                     <div class="submit">
                         <button type="submit">Change</button>
                     </div>
@@ -77,3 +79,7 @@
         <%@include file="Footer.jsp"%>
     </body>
 </html>
+<script src="Bootstrap/jquery/dist/jquery.min.js"></script>
+<script src="Bootstrap/popper.js/dist/popper.min.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>

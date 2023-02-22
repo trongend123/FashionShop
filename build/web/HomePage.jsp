@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,9 @@
 
         <!--        CSS         -->
         <link rel="stylesheet" href="CSS/HomePage.css">
+        
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
         <title>Home Page</title>
     </head>
 
@@ -27,15 +30,13 @@
 
         <!-- VIDEO-BANNER -->
 
-
-        <div class="banner">
-            <div class="banner-content">
-                <video src="IMG/Nike. Just Do It. Nike VN.mp4" autoplay="0" loop=""></video>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="">
+                    <video src="IMG/Nike. Just Do It. Nike VN.mp4" autoplay="0" loop="" style="height:700px;"></video>
+                </div>
             </div>
         </div>
-
-
-
         <div class="product-man-woman">
 
             <div class="product-man item">
@@ -63,52 +64,79 @@
 
             <div class="new-item-title">
                 <h1>NEW ARRIVALS</h1>
+                <br>
             </div>
 
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="new-item-content">
 
-            <div class="new-item-content">
+                        <c:forEach items="${listNewProduct}" var="products">
+                            <div class="card" style="width: 23rem; margin: 10px;">
+                                <a href="product?productId=${products.getProductId()}">
+                                    <img src="${products.getImg()}" alt="" style="width:230px;"> </a>             
+                                <div class="card-body">
+                                    <h5 class="card-title">${products.getProductnName()}</h5>
+                                    <p class="card-text">$ ${products.getPrice()}</p>
 
-                <c:forEach items="${listNewProduct}" var="products">
-                    <div class="new-item-item">
-                        <div class="new-item-item-img">
-                            <a href="product?productId=${products.getProductId()}"><img src="${products.getImg()}" alt=""> </a>             
-                        </div>
+                                </div>
+                            </div>
+                        </c:forEach>
 
-                        <div class="new-item-item-name">
-                            <p>${products.getProductnName()}</p>
-                        </div>
-
-                        <div class="new-item-item-price">
-                            <p>${products.getPrice()}</p>
-                        </div>
                     </div>
-                </c:forEach>
-
-            </div>
-        </div>
+                </div>
+            </div></div>
 
 
         <div class="best-seller">
 
             <div class="best-seller-title">
                 <h1>BEST SELLER</h1>
+                <br>
             </div>
 
 
             <div class="best-seller-content">
 
 
-                <div class="best-seller-item">
-                    <div class="best-seller-item-img">
-                        <img src="" alt="">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dosi-in.com/images/detailed/42/CDL10_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-
-                    <div class="best-seller-item-name">
-                        <p></p>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dosi-in.com/images/detailed/42/CDL10_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-
-                    <div class="best-seller-item-price">
-                        <p></p>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dosi-in.com/images/detailed/42/CDL10_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dosi-in.com/images/detailed/42/CDL10_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dosi-in.com/images/detailed/42/CDL10_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
 
@@ -133,3 +161,7 @@
     </body>
 
 </html>
+<script src="Bootstrap/jquery/dist/jquery.min.js"></script>
+<script src="Bootstrap/popper.js/dist/popper.min.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>

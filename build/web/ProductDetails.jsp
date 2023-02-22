@@ -19,7 +19,8 @@
         <!--        CSS-->     
         <link rel="stylesheet" href="CSS/Product.css">
         <link rel="stylesheet" href="CSS/HomePage.css">
-
+        <link rel="stylesheet" href="Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap/bootstrap-social/bootstrap-social.css">
 
         <!--          JS -->
         <script src="JS/ProductsDetails.js" defer></script>
@@ -239,8 +240,8 @@
 
 
     </body>
-
-
-
-
 </html>
+<script src="Bootstrap/jquery/dist/jquery.min.js"></script>
+<script src="Bootstrap/popper.js/dist/popper.min.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.js"></script>
+<script src="Bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>
