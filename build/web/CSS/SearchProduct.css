@@ -1,0 +1,121 @@
+.body-searchProduct-product {
+    width: calc((100%/10)*8);
+}
+
+/* FILTER */
+
+.filterPrice-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(110, 107, 103);
+}
+
+#buttonFilter {
+    color: rgb(215, 210, 203);
+    background-color: rgb(75, 75, 75);
+    border: none;
+    width: 50%;
+    height: 28px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+
+.filTerPrice {
+    width: 120px;
+    height: 27px;
+}
+
+
+.body-searchProduct {
+    display: flex;
+}
+
+
+
+/* SEARCH PRODUCT LEFT */
+.body-searchProduct-left {
+    width: calc((100%/10)*2);
+    text-align: center;
+}
+
+
+.body-searchProduct-product-notification {
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(72, 86, 86);
+}
+
+.productSearch-listCategory a {
+    text-decoration: none;
+    color: rgb(77, 74, 74);
+}
+
+.productSearch-listCategory {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.productSearch-listCategory-categoryName {
+    margin: 10px 10px;
+    background-color: rgb(194, 202, 202);
+    border-radius: 5px;
+    padding: 10px
+
+}
+
+
+.textDanger-productPrice-search{
+    color: rgb(166, 95, 95);
+}
+
+/* FILTER BUTTON IN PRODUCT */
+.body-searchProduct-buttonFilter button {
+    width: 100px;
+    margin: 15px 0px 30px 100px;
+    background-color: rgb(131, 129, 129);
+    color: white;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+
+
+/* PRODUCT */
+
+.product {
+    display: flex;
+    overflow-x: hidden;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc((100%/5)*1);
+    margin: 0px 20px;
+}
+
+.product-item-img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 20px;
+}
+
+.product-item img {
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.product-item-name,
+.product-item-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(128, 128, 128);
+}

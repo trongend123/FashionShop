@@ -1,0 +1,99 @@
+.historyOrder-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+/* BUTTON */
+
+.historyOrder-button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.historyOrder-button button {
+    border-radius: 8px;
+    border: 1px solid  rgb(61, 120, 120);
+    color: aliceblue;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(61, 120, 120);
+    padding: 6px;
+}
+
+.historyOrder-tableContent {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SEARCH */
+
+.historyOrder-showAll a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(197, 33, 33);
+}
+
+.historyOrder-search{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.historyOrder-search input{
+    width: 310px;
+    height: 30px;
+}
+
+
+/* TABLE */
+
+.tableHistoryOrder-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#tableHistoryOrder img {
+    width: 100%;
+    height: 80px;
+}
+
+#tableHistoryOrder a {
+    text-decoration: none;
+}
+
+#tableHistoryOrder tr,
+td {
+    text-align: center;
+    padding: 25px;
+}
+
+#tableHistoryOrder-total {
+    font-weight: 580;
+    font-size: 16px;
+    color: rgb(13, 93, 55);
+    margin-right: 100px;
+}
+
+#tableHistoryOrder-buyAgain {
+    border: 1px solid rgb(13, 93, 55);
+    font-size: 16px;
+    background-color: rgb(13, 93, 55);
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+.historyOrder-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.historyOrder-footer a {
+    text-decoration: none;
+}

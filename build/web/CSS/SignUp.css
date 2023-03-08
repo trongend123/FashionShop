@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    margin: 100 50;
+}
+
+.main-image {
+    width: calc((100%/12)*6);
+}
+
+.main-image-content {
+    width: 100%;
+    height: 100%;
+}
+
+.main-log {
+    width: calc((100%/12)*6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 200, 200);
+}
+
+.table-signUp {
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(53, 51, 51);
+}
+
+.main-log-info {
+    font-weight: 800;
+    color: rgb(118, 118, 118);
+}
+
+.table-signUp td {
+    padding: 5px;
+}
+
+
+.table-signUp select {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(156, 156, 156);
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.buttonSubmit {
+    text-align: center;
+}
+
+
+.buttonSubmit button {
+    text-align: center;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 800;
+    border: 1px solid rgb(118, 118, 118);
+    background: rgb(118, 118, 118);
+    color: rgb(206, 209, 212);
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+
+.textDander {
+    color: rgb(201, 84, 84);
+    font-size: 13px;
+}
+
+.table-signUp input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(156, 156, 156);
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+}

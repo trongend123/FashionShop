@@ -1,0 +1,126 @@
+.userProfile {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.user-profile-left {
+    width: calc((100%/12)*6);
+    width: 100%;
+    text-align: center;
+}
+
+.user-profile-left-img img {
+    height: 450px;
+}
+
+.user-profile-left-option button {
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: 0.0011rem solid black;
+    color: rgb(81, 120, 120);
+    font-weight: 600;
+}
+
+
+
+.user-profile-right {
+    width: calc((100%/12)*6);
+    width: 100%;
+}
+
+.edit-table-profile {
+    text-align: center;
+    font-size: large;
+    color: rgb(92, 136, 121);
+    margin-top: 180px;
+}
+
+.edit-table-profile input,
+select {
+    width: 280px;
+    height: 35px;
+    border-radius: 8px;
+    border: 0.0011rem solid black;
+    font-size: 17px;
+    color: rgb(72, 113, 113);
+}
+
+.edit-table-profile tr,
+td {
+    padding: 6px;
+}
+
+
+.editProfile-submit-button button {
+    border-radius: 8px;
+    border: 0.0011rem solid black;
+    color: aliceblue;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(61, 120, 120);
+}
+
+.textdanger-edit{
+    font-size: 14px;
+    color: rgb(108, 33, 33);
+}
+
+/* PRODUCT */
+
+.product {
+    display: flex;
+    overflow-x: hidden;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc((100%/3.5)*1);
+    margin: 0 20px;
+}
+
+.product-item-img {
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    padding: 20px 20px;
+}
+
+.product-item img {
+    width: 100%;
+    margin: 10 20;
+}
+
+.product-item-name,
+.product-item-price {
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(128, 128, 128);
+}
+
+
+/* PRODUCT */
+
+.product {
+    display: flex;
+    overflow-x: hidden;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc((100%/4)*1);
+    margin: 5 20px;
+}
+
+.product-item img {
+    width: 100%;
+}
+
+.product-item-name,
+.product-item-price {
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(128, 128, 128);
+}
