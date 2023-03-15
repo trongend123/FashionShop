@@ -7,12 +7,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!-- NAV-BAR -->
-<div class="navBar">
+<div class="navBar" style="background-color: black">
 
     <div class="navBar-logo">
 
         <div>
-            <a href="setUpHomePage"><img src="https://www.logoground.com/uploads/201679392016-09-124907954Mens-Fashion-Shopping-Logo.jpg" alt=""></a>
+            <a href="setUpHomePage"><img src="IMG/logo-shop-quần-áo-8.png" alt=""></a>
         </div>
 
     </div>
@@ -89,7 +89,7 @@
 
 </div>
 
-<div class="category">
+<div class="category" style="background-color: black;">
 
     <ul class="categoryName">
         <c:forEach items="${listCategory}" var="c">

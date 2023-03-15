@@ -93,7 +93,7 @@
                         <div class="card-body">
                             <h5 class="card-title">${products.getProductnName()}</h5>
                             <p class="card-text">$${products.getPrice()}</p>
-                            <a href="#" class="btn btn-primary">Add to cart</a>
+                            <a href="product?productId=${products.getProductId()}&userId=${sessionScope.account.getUserId()}" class="btn btn-primary">Add to cart</a>
                         </div>
                     </div>
                 </c:forEach>
