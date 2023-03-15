@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(195, 188, 188);
-    color: aliceblue;
+   
     align-items: center;
 }
 
@@ -45,7 +45,7 @@
 
 
 .nvarBar-left-content a {
-    color: aliceblue;
+  
     text-decoration: none;
     font-size:15;
 }
